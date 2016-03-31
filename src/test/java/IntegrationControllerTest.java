@@ -34,6 +34,9 @@ public class IntegrationControllerTest {
         assertTrue("Data List must have values.", dataList.size() > 0);
     }
     
+    /**
+     * Test for calculateIntegrationFunction method, from class IntegrationController.
+     */
     @Test
     public void testCalculateIntegrationFunction() {
 
