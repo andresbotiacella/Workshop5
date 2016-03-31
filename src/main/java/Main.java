@@ -43,7 +43,15 @@ public class Main {
             distribution1.setxValue(x1);
             distribution1.setWidthSegment(distribution1.getxValue() / distribution1.getNumSeg());
             IntegrationDistribution t1Result = controller.calculateIntegrationFunction(distribution1);
+         
             
+            String htmlData = "Test Case # 1<br><br>"; //Title
+            htmlData += "<div style=\"display: inline-flex\">";
+            htmlData += "<table style=\"border: 1px solid; border-collapse: collapse; text-align: center\">"; //Open Table
+            htmlData += "<tr><th style=\"border: 1px solid; width: 150px;\">Number of Segments</th><th style=\"border: 1px solid; width: 60px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 60px;\">x</th><th style=\"border: 1px solid; width: 60px;\">P expected</th><th style=\"border: 1px solid; width: 60px;\">P actual</th></tr>"; //Header
+            htmlData += String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", numberOfSegments1, degreesOfFreedom1, x1, 0.35006, t1Result.getP());
+            htmlData += "</table><br>"; //Close Table
+            htmlData += "</div><br><br><br>";
             
             //Test Case 2
             IntegrationDistribution distribution2 = new IntegrationDistribution();
@@ -57,6 +65,14 @@ public class Main {
             distribution2.setWidthSegment(distribution2.getxValue() / distribution2.getNumSeg());
             IntegrationDistribution t2Result = controller.calculateIntegrationFunction(distribution2);
             
+            htmlData += "Test Case # 2<br><br>"; //Title
+            htmlData += "<div style=\"display: inline-flex\">";
+            htmlData += "<table style=\"border: 1px solid; border-collapse: collapse; text-align: center\">"; //Open Table
+            htmlData += "<tr><th style=\"border: 1px solid; width: 150px;\">Number of Segments</th><th style=\"border: 1px solid; width: 60px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 60px;\">x</th><th style=\"border: 1px solid; width: 60px;\">P expected</th><th style=\"border: 1px solid; width: 60px;\">P actual</th></tr>"; //Header
+            htmlData += String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", numberOfSegments2, degreesOfFreedom2, x2, 0.36757, t2Result.getP());
+            htmlData += "</table><br>"; //Close Table
+            htmlData += "</div><br><br><br>";
+            
             
             //Test Case 3
             IntegrationDistribution distribution3 = new IntegrationDistribution();
@@ -69,49 +85,16 @@ public class Main {
             distribution3.setxValue(x3);
             distribution3.setWidthSegment(distribution3.getxValue() / distribution3.getNumSeg());
             IntegrationDistribution t3Result = controller.calculateIntegrationFunction(distribution3);
-
+            
+            htmlData += "Test Case # 3<br><br>"; //Title
+            htmlData += "<div style=\"display: inline-flex\">";
+            htmlData += "<table style=\"border: 1px solid; border-collapse: collapse; text-align: center\">"; //Open Table
+            htmlData += "<tr><th style=\"border: 1px solid; width: 150px;\">Number of Segments</th><th style=\"border: 1px solid; width: 60px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 60px;\">x</th><th style=\"border: 1px solid; width: 60px;\">P expected</th><th style=\"border: 1px solid; width: 60px;\">P actual</th></tr>"; //Header
+            htmlData += String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", numberOfSegments3, degreesOfFreedom3, x3, 0.49500, t3Result.getP());
+            htmlData += "</table><br>"; //Close Table
+            htmlData += "</div><br><br><br>";
         
-           String result="<!DOCTYPE html>\n" +
-"<html>\n" +
-"<head>\n" +
-"<style>\n" +
-"table, th, td {\n" +
-"    border: 1px solid black;\n" +
-"    border-collapse: collapse;\n" +
-"}\n" +
-"th, td {\n" +
-"    padding: 5px;\n" +
-"}\n" +
-"</style>\n" +
-"</head>\n" +
-"<body>\n" +
-"\n" +
-"<table style=\"width:100%\">\n" +
-"  <tr>\n" +
-"    <th>P Expected</th>\n" +
-"    <th>P Actual</th>      \n" +
-"   \n" +
-"  </tr>\n" +
-"  <tr>\n" +
-"    <td>0.35006</td>\n" +
-"    <td>"+t1Result.getP()+"</td>     \n" +
-"    \n" +
-"  </tr>\n" +
-"  <tr>\n" +
-"    <td>0.36757</td>\n" +
-"    <td>"+t2Result.getP()+"</td>       \n" +
-"    \n" +
-"  </tr>\n" +
-"  <tr>\n" +
-"    <td>0.49500</td>\n" +
-"    <td>"+t3Result.getP()+"</td>       \n" +
-"    \n" +
-"  </tr>\n" +
-"</table>\n" +
-"\n" +
-"</body>\n" +
-"</html>";
- return result;
+            return htmlData;
             
         });
 

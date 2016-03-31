@@ -18,5 +18,5 @@ Open browser on [localhost:5000](http://localhost:5000/).
 
 To access the application on heroku:
 ```
-Open browser and go to: (https://pure-retreat-56211.herokuapp.com/calculateSize)
+Open browser and go to: (https://powerful-caverns-10293.herokuapp.com/Integration)
 ```
