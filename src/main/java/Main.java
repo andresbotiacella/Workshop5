@@ -48,7 +48,7 @@ public class Main {
             String htmlData = "Test Case # 1<br><br>"; //Title
             htmlData += "<div style=\"display: inline-flex\">";
             htmlData += "<table style=\"border: 1px solid; border-collapse: collapse; text-align: center\">"; //Open Table
-            htmlData += "<tr><th style=\"border: 1px solid; width: 150px;\">Number of Segments</th><th style=\"border: 1px solid; width: 60px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 60px;\">x</th><th style=\"border: 1px solid; width: 60px;\">P expected</th><th style=\"border: 1px solid; width: 60px;\">P actual</th></tr>"; //Header
+            htmlData += "<tr><th style=\"border: 1px solid; width: 100px;\">Number of Segments</th><th style=\"border: 1px solid; width: 100px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 100px;\">x</th><th style=\"border: 1px solid; width: 150px;\">P expected</th><th style=\"border: 1px solid; width: 150px;\">P actual</th></tr>"; //Header
             htmlData += String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", numberOfSegments1, degreesOfFreedom1, x1, 0.35006, t1Result.getP());
             htmlData += "</table><br>"; //Close Table
             htmlData += "</div><br><br><br>";
@@ -68,7 +68,7 @@ public class Main {
             htmlData += "Test Case # 2<br><br>"; //Title
             htmlData += "<div style=\"display: inline-flex\">";
             htmlData += "<table style=\"border: 1px solid; border-collapse: collapse; text-align: center\">"; //Open Table
-            htmlData += "<tr><th style=\"border: 1px solid; width: 150px;\">Number of Segments</th><th style=\"border: 1px solid; width: 60px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 60px;\">x</th><th style=\"border: 1px solid; width: 60px;\">P expected</th><th style=\"border: 1px solid; width: 60px;\">P actual</th></tr>"; //Header
+            htmlData += "<tr><th style=\"border: 1px solid; width: 100px;\">Number of Segments</th><th style=\"border: 1px solid; width: 100px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 100px;\">x</th><th style=\"border: 1px solid; width: 150px;\">P expected</th><th style=\"border: 1px solid; width: 150px;\">P actual</th></tr>"; //Header
             htmlData += String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", numberOfSegments2, degreesOfFreedom2, x2, 0.36757, t2Result.getP());
             htmlData += "</table><br>"; //Close Table
             htmlData += "</div><br><br><br>";
@@ -89,7 +89,7 @@ public class Main {
             htmlData += "Test Case # 3<br><br>"; //Title
             htmlData += "<div style=\"display: inline-flex\">";
             htmlData += "<table style=\"border: 1px solid; border-collapse: collapse; text-align: center\">"; //Open Table
-            htmlData += "<tr><th style=\"border: 1px solid; width: 150px;\">Number of Segments</th><th style=\"border: 1px solid; width: 60px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 60px;\">x</th><th style=\"border: 1px solid; width: 60px;\">P expected</th><th style=\"border: 1px solid; width: 60px;\">P actual</th></tr>"; //Header
+            htmlData += "<tr><th style=\"border: 1px solid; width: 100px;\">Number of Segments</th><th style=\"border: 1px solid; width: 100px;\">Degrees of Freedom</th><th style=\"border: 1px solid; width: 100px;\">x</th><th style=\"border: 1px solid; width: 150px;\">P expected</th><th style=\"border: 1px solid; width: 150px;\">P actual</th></tr>"; //Header
             htmlData += String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", numberOfSegments3, degreesOfFreedom3, x3, 0.49500, t3Result.getP());
             htmlData += "</table><br>"; //Close Table
             htmlData += "</div><br><br><br>";
