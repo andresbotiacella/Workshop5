@@ -25,7 +25,9 @@ public class Main {
         port(Integer.valueOf(System.getenv("PORT")));
         staticFileLocation("/public");
 
-
+        /**
+        *Calculates and Displays Integration
+        */
         get("/Integration", (req, res) -> {
             
             IntegrationController controller = new IntegrationController();
@@ -99,7 +101,9 @@ public class Main {
         });
 
 
-
+        /**
+        *Display Index
+        */
         get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");

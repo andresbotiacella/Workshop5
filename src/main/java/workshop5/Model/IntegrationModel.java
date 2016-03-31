@@ -5,8 +5,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 /**
- * This class to manage the math operations used in the numerical integration
- * process
+ * Model Class including all the functional methods
  *
  * @author Andy
  */
@@ -52,9 +51,8 @@ public class IntegrationModel {
     }
     
     /**
-     * this method to calculate numerical integration of the t distribution
+     * Method to calculate the numerical integration
      *
-     * @method calculateNumericalIntegrationP
      * @param t T Distribution
      * 
      * @return p numerical integration
@@ -75,9 +73,8 @@ public class IntegrationModel {
     }
 
     /**
-     * this method to calculate f(x) to use numerical integration process
+     * Method to calculate the function
      *
-     * @method functionX
      * @param x
      * @param dof
      * @return f(x) result
@@ -87,19 +84,18 @@ public class IntegrationModel {
         double x1 = 1 + ((Math.pow(x, 2)) / dof);
         double exp = (double) (dof + 1) / 2;
         x1 = Math.pow(x1, -exp);
-        double x2 = gamaFucntion(exp) / (Math.pow(dof * Math.PI, MIDDLE) * gamaFucntion((double) dof / 2));
+        double x2 = gammaFunction(exp) / (Math.pow(dof * Math.PI, MIDDLE) * gammaFunction((double) dof / 2));
         fx = x2 * x1;
         return fx;
     }
 
     /**
-     * this method to calculate gamma function of the integer number
+     * Method to calculate the gamma function for integers
      *
-     * @method gamaFucntion
      * @param number
      * @return gama result
      */
-    public static int gamaFunction(int number) {
+    public static int gammaFunction(int number) {
         if (number > 0) {
             number--;
         }
@@ -107,13 +103,12 @@ public class IntegrationModel {
     }
 
     /**
-     * this method to calculate gamma function of the double number
+     * Method to calculate the gamma function for doubles
      *
-     * @method gamaFucntion
      * @param number
      * @return gama result
      */
-    public static double gamaFucntion(double number) {
+    public static double gammaFunction(double number) {
         if (number > 0) {
             number--;
         }
@@ -121,9 +116,8 @@ public class IntegrationModel {
     }
 
     /**
-     * this method to calculate the factorial function of the number x!
+     * Method to calculate the factorial function for doubles
      *
-     * @method factorial
      * @param number
      * @return factorial result
      */

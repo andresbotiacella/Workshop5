@@ -5,23 +5,25 @@ import workshop5.Model.IntegrationModel;
 import workshop5.Model.IntegrationDistribution;
 
 /**
- * this control class to manage the operations to calculate numerical
- * integration of the T distribution and communicate with the view classes
- *
+ * Controller class containing the logic displayed in the program
  * @author Andy
  */
 public class IntegrationController {
 
-    
+    /**
+     * Method that loads data from a file
+     *
+     * @param fileName name of the file
+     * @return List containing all the data by row
+     */
     public ArrayList<String[]> loadIntegrationData(String fileName){
         return IntegrationModel.getData(fileName);
     }
     
     
     /**
-     * this method return T distribution with the value numerical integration p
+     * Method that calculates the integration
      *
-     * @method calculateIntegrationFunction
      * @param t IntegrationDistribution t
      * @return IntegrationDistribution t
      */
@@ -38,8 +40,6 @@ public class IntegrationController {
             return calculateIntegrationFunction(t);
         }
 
-    }
-
-    
+    }  
 
 }

@@ -2,26 +2,19 @@
 package workshop5.Model;
 
 /**
- * This class to contains the data t distribution and results obtained using numerical integration
+ * Entity containing the data and results of the distribution
  * @author Andy
  */
 public class IntegrationDistribution {
     
-    // x value segment
     private double xValue;
-    //initial number of segments
     private int numSeg;
-    //degree of freedom
     private int dof;
-    //result of numerical integration
     private double p;
-    // widht of segments
     private double widthSegment;
-    //error acceptable
     private double errorValue;
 
     /**
-     * @method getxValue
      * @return xValue
      */
     public double getxValue() {
@@ -29,7 +22,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @method setxValue
      * @param xValue
      */
     public void setxValue(double xValue) {
@@ -37,7 +29,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @method getNumSeg
      * @return numSeg
      */
     public int getNumSeg() {
@@ -45,7 +36,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @method setNumSeg 
      * @param numSeg
      */
     public void setNumSeg(int numSeg) {
@@ -53,7 +43,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @method getDof
      * @return dof
      */
     public int getDof() {
@@ -61,7 +50,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @method setDof
      * @param dof
      */
     public void setDof(int dof) {
@@ -69,7 +57,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @method getP
      * @return p
      */
     public double getP() {
@@ -77,7 +64,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @method setP
      * @param p
      */
     public void setP(double p) {
@@ -85,7 +71,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @method getWidthSegment
      * @return widthSegment
      */
     public double getWidthSegment() {
@@ -93,7 +78,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     *@method setWidthSegment
      * @param widthSegment
      */
     public void setWidthSegment(double widthSegment) {
@@ -101,7 +85,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @mehtod getErrorValue
      * @return errorValue
      */
     public double getErrorValue() {
@@ -109,7 +92,6 @@ public class IntegrationDistribution {
     }
 
     /**
-     * @mehtod setErrorValue
      * @param errorValue
      */
     public void setErrorValue(double errorValue) {
